@@ -5,6 +5,7 @@ const router: Router = Router()
 
 const { sayHello } = new HelloWorldController()
 
-router.use('/', sayHello)
+router.route('/')
+  .get(sayHello)
 
 export default router
