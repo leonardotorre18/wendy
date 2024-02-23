@@ -21,7 +21,7 @@ sdf  f
 ```bash
   docker compose -f docker-compose-dev.yml up --build
 ```
-Este primer comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
+Este primsd dfdser comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
 
 ```bash
   docker compose -f docker-compose-dev.yml up
