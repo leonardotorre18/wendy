@@ -19,7 +19,7 @@ dsfasdfsadf
 Para ejecutar el servidor dedsa f s forma local, tenemos dos comandos:
 sdf  f
 ```bash
-  docker compose -f docker-compose-dev.yml up --build
+  docker compose -f docker-compose-dev.yml up --builddsfasdfads
 ```
 Este primsd dfdser comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
 
