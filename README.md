@@ -24,7 +24,7 @@ sdf  f
 Este primsd dfdser comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
 
 ```bash
-  docker compose -f docker-compose-dev.yml up
+  docker compose -f docker-compose-dev.yml upasdfasd
 ```
 
 Este segundo comando arranca el contenedor sin necesidad de volver a construir la imagen. Ideal si ya tenemos el contenedor creado y no queremos volver a construir la imagen desde cero
