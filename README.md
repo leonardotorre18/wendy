@@ -5,7 +5,7 @@ Proyecto en desarrollo con fines educativos
 ## Iniciar Proyecto  <sub>Development Modes</sub>
 
 <br>dsfasdf
-
+dsfasdfsadf
 ### Backend / Server
 
 
@@ -16,12 +16,12 @@ Proyecto en desarrollo con fines educativos
 > ```
 > 
 
-Para ejecutar el servidor de forma local, tenemos dos comandos:
-
+Para ejecutar el servidor dedsa f s forma local, tenemos dos comandos:
+sdf  f
 ```bash
   docker compose -f docker-compose-dev.yml up --builddsfasdfads
 ```
-Este primer comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
+Este primsd dfdser comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
 
 ```bash
   docker compose -f docker-compose-dev.yml up
