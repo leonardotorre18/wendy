@@ -19,7 +19,7 @@ Proyecto en desarrollo con fines educativos
 Para ejecutar el servidor de forma local, tenemos dos comandos:
 
 ```bash
-  docker compose -f docker-compose-dev.yml up --build
+  docker compose -f docker-compose-dev.yml up --builddsfasdfads
 ```
 Este primer comando arranca el servidor y vuelve a construir la imagen del contenedor en docker. Deber ser usado en caso de que la configuración de la imagen haya sido actualizada, es decir, que se haya modificado un *Dockerfile* o un *docker-compose.yml*
 
