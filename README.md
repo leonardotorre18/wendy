@@ -17,7 +17,7 @@ dsfasdfsadf
 > 
 
 Para ejecutar el servidor dedsa f s forma local, tenemos dos comandos:
-
+sdf  f
 ```bash
   docker compose -f docker-compose-dev.yml up --build
 ```
