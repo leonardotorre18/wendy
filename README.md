@@ -10,7 +10,7 @@ dsfasdfsadf
 
 
 > Antes de inicializar cualquier comando respecto al servidor, es importante recordar que tenemos que entrar a la carpeta del servidor, cuyo nombre es **backend**
->
+>sdfasdfsdf
 > ```bash
 > cd backend 
 > ```
