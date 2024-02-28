@@ -22,5 +22,9 @@ export const patientsSchema = (): Model<IPatient> =>
       name: {
         type: 'string',
         required: true
+      },
+      age: {
+        type: 'number',
+        species: 'string'
       }
     }))

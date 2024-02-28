@@ -22,5 +22,21 @@ export const doctorsSchema = (): Model<IDoctor> =>
       name: {
         type: 'string',
         required: true
-      }
+      },
+      specialties: [
+        {
+          nameSpecialties: {
+            type: 'string',
+            required: true
+          },
+          experience: {
+            type: 'number',
+            required: true
+          },
+          description: {
+            type: 'string',
+            required: true
+          }
+        }
+      ]
     }))
