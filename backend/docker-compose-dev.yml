@@ -13,9 +13,9 @@ services:
       - ./:/home/app/backend
 
 
-  wendydb:
-    container_name: wendydb
-    image: mongo:4
+  wendy_db:
+    container_name: wendy_db
+    image: mongo:3
     ports:
       - 27017:27017
     volumes:
