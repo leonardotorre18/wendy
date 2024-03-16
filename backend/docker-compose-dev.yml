@@ -1,4 +1,4 @@
-version: '1'
+version: '1.0.0'
 
 services:
 
@@ -8,14 +8,16 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     ports:
-      - 3000:3000
+      - ${PORT}:${PORT}
     volumes:
       - ./:/home/app/backend
+    links:
+      - wendy_db
 
 
   wendy_db:
     container_name: wendy_db
-    image: mongo:3
+    image: mongo:4
     ports:
       - 27017:27017
     volumes:
@@ -24,5 +26,6 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     attach: false
+  
 volumes:
   wendy:
