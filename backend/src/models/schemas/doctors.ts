@@ -38,5 +38,18 @@ export const doctorsSchema = (): Model<IDoctor> =>
             required: true
           }
         }
+      ],
+      availability: [
+        {
+          day: {
+            type: 'string'
+          },
+          startTime: {
+            type: 'date'
+          },
+          endTime: {
+            type: 'date'
+          }
+        }
       ]
     }))
