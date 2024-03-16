@@ -29,6 +29,14 @@ Este primer comando arranca el servidor y vuelve a construir la imagen del conte
 
 Este segundo comando arranca el contenedor sin necesidad de volver a construir la imagen. Ideal si ya tenemos el contenedor creado y no queremos volver a construir la imagen desde cero
 
+#### Enviroment
+
+- **PORT**: *number* = Puerto en el cual se ejecutará el Backend.
+  `PORT=3000`
+- **MONGO_INITDB_ROOT_USERNAME**: *string* = Configuración del contenedor docker para asignar el nombre de usuario para ingresar a la base de datos. `MONGO_INITDB_ROOT_USERNAME=root`
+- **MONGO_INITDB_ROOT_PASSWORD**: *string* = Configuración del contenedor docker para asignar la contraseña de usuario para ingresar a la base de datos. `MONGO_INITDB_ROOT_PASSWORD=password`
+- **DATABASE_URL**: *string* = URI de conexión MongoDB. Debe tomarse en cuenta las varibles **MONGO_INITDB_ROOT_USERNAME** y **MONGO_INITDB_ROOT_PASSWORD**, definidas previamente. `DATABASE_URL=mongodb://root:password@wendy_db:27017/`
+
 <br>
 
 ### Frontend / Client
