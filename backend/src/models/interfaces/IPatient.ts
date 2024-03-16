@@ -3,5 +3,4 @@ export interface IPatient {
   password: string
   name: string
   age: number
-  species: string
 }

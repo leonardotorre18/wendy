@@ -13,7 +13,8 @@ export const doctorsSchema = (): Model<IDoctor> =>
     model<IDoctor>('doctors', new Schema<IDoctor>({
       email: {
         type: 'string',
-        required: true
+        required: true,
+        unique: true
       },
       password: {
         type: 'string',
@@ -21,6 +22,10 @@ export const doctorsSchema = (): Model<IDoctor> =>
       },
       name: {
         type: 'string',
+        required: true
+      },
+      age: {
+        type: 'number',
         required: true
       },
       specialties: [

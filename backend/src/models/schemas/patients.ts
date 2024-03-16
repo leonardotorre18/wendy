@@ -13,7 +13,8 @@ export const patientsSchema = (): Model<IPatient> =>
     model<IPatient>('patients', new Schema<IPatient>({
       email: {
         type: 'string',
-        required: true
+        required: true,
+        unique: true
       },
       password: {
         type: 'string',
@@ -25,6 +26,6 @@ export const patientsSchema = (): Model<IPatient> =>
       },
       age: {
         type: 'number',
-        species: 'string'
+        required: true
       }
     }))

@@ -1,19 +1,17 @@
 import { type Request, type Response } from 'express'
-import { createDoctor } from '../models/orm/DoctorsORM'
-import { type IDoctor } from '../models/interfaces/IDoctor'
+import { createPatient } from '../models/orm/PatientsORM'
+import { type IPatient } from '../models/interfaces/IPatient'
 
-export class DoctorsController {
+export class PatientsController {
   public register = (req: Request, res: Response): void => {
     const { name, email, password, age } = req.body
-    createDoctor({
+    createPatient({
       name,
       email: email.toString().toLocaleUpperCase(),
       password,
-      age,
-      specialties: [],
-      availability: []
+      age
     })
-      .then((doctor: IDoctor) => {
+      .then((doctor: IPatient) => {
         res.status(201).json({
           doctor
         })
