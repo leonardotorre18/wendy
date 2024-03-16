@@ -5,15 +5,11 @@ dotenv.config()
 
 const { DATABASE_URL } = process.env
 
-console.log(DATABASE_URL)
-console.log(process.env.MONGO_INITDB_ROOT_USERNAME)
-console.log(process.env.MONGO_INITDB_ROOT_PASSWORD)
-
 mongoose.connect(DATABASE_URL ?? '')
   .then(() => {
     console.log('Database connection successful')
   })
-  .catch((err) => {
+  .catch((err: any) => {
     console.log('Database connection Error')
     console.log(err)
   })

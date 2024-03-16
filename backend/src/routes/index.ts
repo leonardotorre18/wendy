@@ -1,11 +1,8 @@
-import { Router } from 'express'
-import { HelloWorldController } from '../controllers/HelloWorld.controller'
+import express, { type Express } from 'express'
+import DoctorsRoutes from './doctors'
 
-const router: Router = Router()
+const routes: Express = express()
 
-const { sayHello } = new HelloWorldController()
+routes.use('/doctors', DoctorsRoutes)
 
-router.route('/')
-  .get(sayHello)
-
-export default router
+export default routes
