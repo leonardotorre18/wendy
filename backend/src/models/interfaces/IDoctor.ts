@@ -14,6 +14,7 @@ export interface IDoctor {
   email: string
   password: string
   name: string
+  age: number
   specialties: DoctorSpecialties[]
   availability: DoctorAvailability[]
 }
